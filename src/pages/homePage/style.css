@@ -1,0 +1,38 @@
+/* HomePage.css */
+html, body {
+    height: 100%; /* Make sure the body takes the full height */
+    width: 100%; /* Make sure the body takes the full width */
+    margin: 0; /* Remove default margins */
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; /* Take up remaining space between header and footer */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Optional: styling for the footer */
+footer {
+    padding: 16px;
+    background-color: #f1f1f1; /* Background color for the footer */
+    text-align: center; /* Center text in the footer */
+}
+
+/* Responsive images */
+img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styles for sections */
+.introduction,
+.about-us,
+.our-services {
+    margin-bottom: 16px; /* Spacing between sections */
+}

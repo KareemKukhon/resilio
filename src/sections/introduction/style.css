@@ -1,0 +1,50 @@
+.curvy-section {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 50px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+  
+  @media (max-width: 768px) {
+    .curvy-section {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+  }
+
+
+.title{
+    font-size: 50px;
+}
+
+.title-description{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+    .title {
+        font-size: 30px;
+    }
+    .title-description{
+        font-size: 16px;
+    }
+}
+
+.social-media-links {
+    padding: 30px;
+  }
+  
+  .social-media-links a {
+    color: var(--color-text); 
+    transition: color 0.3s ease;
+    padding: 7px;
+  }
+  
+  .social-media-links a:hover {
+    color: var(--color-primary);
+  }
+  
+  span{
+    color: var(--color-primary);
+  }

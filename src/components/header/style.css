@@ -1,0 +1,37 @@
+
+header{
+    background-color: var(--color-secondary);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding-right: 30px;
+    gap: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 22px;
+}
+
+.active{
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.active a{
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.logo {
+    width: 150px; /* Set the width of the logo */
+    height: auto; /* Keep the aspect ratio */
+  }

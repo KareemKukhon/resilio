@@ -1,0 +1,16 @@
+.aboutUs{
+    color: black;
+    text-align: left; 
+    display: flex;
+    gap: 10px; 
+    justify-content: inline;
+}
+.aboutUs img{
+    border-top-left-radius: 105px;
+    border-bottom-right-radius: 105px;
+    margin-top: 50px;
+    width: 50%;
+    height: 550px;
+
+} 
+

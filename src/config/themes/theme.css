@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #1abc9c;
+    --color-secondary: #34495e;
+    --color-accent: #9b59b6;
+    --color-background: #2c3e50;
+    --color-text: #ecf0f1;
+  }
+  
+  /* Dark Mode */
+  [data-theme='dark'] {
+    --color-primary: #16a085;
+    --color-secondary: #2c3e50;
+    --color-accent: #8e44ad;
+    --color-background: #1a252f;
+    --color-text: #bdc3c7;
+  }
