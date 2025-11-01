@@ -1,36 +1,42 @@
-import React from 'react'
-import ElevatedButton from '../../components/elevatedButton'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import './style.css'
-import ContactIcon from '../../icons/contact-icon'
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import './style.css';
 
 export default function Introduction() {
-  const navigate = useNavigate();
   return (
     <div className="curvy-section">
-      <h1 className='title'>Welcome to, <span>Resilio</span></h1>
-      <p className='title-description'>Resilio was founded with a vision to provide cutting-edge IT development and consulting services. While we may be new to the market, our team members have extensive experience and a strong background in technology, having worked on various successful projects in different capacities.</p>
-      <ElevatedButton onClick={()=>navigate('/contact')} >
-        Contact Us 
-        <ContactIcon/>
-        </ElevatedButton>
+      <h1 className="title">
+        SBF.com & SBF.com.sa <span>are for sale</span>
+      </h1>
 
-        <div className="social-media-links">
-      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <FaFacebook size={24} />
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-        <FaTwitter size={24} />
-      </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <FaInstagram size={24} />
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <FaLinkedin size={24} />
-      </a>
-    </div>
+      <p className="title-description">
+        Own <strong>SBF.com</strong> and <strong>SBF.com.sa</strong> — ultra-short, premium, and brand-ready domain names 
+        perfectly aligned with Saudi Arabia’s digital transformation and government initiatives.
+      </p>
 
+      {/* <div className="cta-buttons">
+        <a
+          href="mailto:offers@sbf.com?subject=Offer%20for%20SBF.com"
+          className="elevated-button"
+        >
+          <FaEnvelope style={{ marginRight: '8px' }} />
+          Inquire About Price
+        </a>
+
+        <a
+          href="https://wa.me/9665XXXXXXX?text=I’m%20interested%20in%20SBF.com"
+          className="elevated-button outline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp style={{ marginRight: '8px' }} />
+          Contact via WhatsApp
+        </a>
+      </div> */}
+
+      <p className="title-description small-note">
+        Serious offers only. Ownership verified. Escrow supported.
+      </p>
     </div>
-  )
+  );
 }

@@ -11,6 +11,7 @@ import MessageIcon from '../../icons/message-icon';
 import Header from '../../components/header';
 import ElevatedButton from '../../components/elevatedButton';
 import EmailJS from '@emailjs/browser';
+import Introduction from '../../sections/introduction';
 
 export default class ContactUs extends Component {
   constructor(props) {
@@ -66,76 +67,34 @@ export default class ContactUs extends Component {
   render() {
     return (
       <div>
-        <Header myPage="contact" />
+        {/* <Header myPage="contact" /> */}
+        <Introduction/>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px', margin: '20px' }}>
-          <div style={{  padding: '20px', textAlign: 'left' }}>
-            <h1 style={{ fontSize: '60px' }}>Let's Work Together</h1>
-            <p style={{ fontSize: '18px', color: '#595A73' }}>
-              Have questions or need assistance with our IT services? We're here to help! Reach out to our team through the form below, or use the provided contact details. Whether it's technical support, project inquiries, or general information, we're dedicated to providing prompt and effective solutions. Let's connect and take your technology to the next level.
-            </p>
-          </div>
-          <img
-          className='responsive-image'
-            src={`${process.env.PUBLIC_URL}/contact-us.png`}
-            alt="Resilio contact us page logo"
-            style={{ width: '45%', height: '490px' }}
-          />
-        </div>
+  <div style={{  padding: '20px', textAlign: 'left' }}>
+    <h1 style={{ fontSize: '60px' }}>SBF.com & SBF.com.sa — Contact / Offer</h1>
+    <p style={{ fontSize: '18px', color: '#595A73' }}>
+      Interested in acquiring <strong>SBF.com</strong> and <strong>SBF.com.sa</strong>? Send your offer or inquiry using the form below, or reach out via the contact details provided. 
+      This premium 3-letter domain pair is short, memorable, and ideal for Saudi government and digital transformation initiatives. Serious offers only. Escrow supported.
+    </p>
+    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
+    {/* First div */}
+    <ContactInfo title="offers@sbf.com" Icon={MailIcon} />
+    <ContactInfo title="Riyadh, Saudi Arabia" Icon={HomeIcon} />
+    <ContactInfo title="+966 5X XXX XXXX" Icon={PhoneIcon} />
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '50px', gap: '20px' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {/* First div */}
-            <ContactInfo title="info@resilio.com" Icon={MailIcon} />
-            <ContactInfo title="123 Main St" Icon={HomeIcon} />
-            <ContactInfo title="123-456-7890" Icon={PhoneIcon} />
-          </div>
 
-          <div style={{ width: '50%' }}>
-            {/* Second div */}
-            <form ref={this.form} onSubmit={this.sendEmail} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <TextField
-                label="Name"
-                name="user_name"
-                className="text-field"
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <PersonIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
+</div>
+  </div>
+  <img
+    className='responsive-image'
+    src={`${process.env.PUBLIC_URL}/contact-us.png`}
+    alt="SBF.com & SBF.com.sa contact page"
+    style={{ width: '45%', height: '490px' }}
+  />
+</div>
 
-              <TextField
-                label="Email"
-                name="user_email"
-                className="text-field"
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <MailIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
 
-              <TextField
-                label="Type Your Message"
-                name="message"
-                className="text-field"
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position="end">
-                      <MessageIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
 
-              <ElevatedButton children={"Send Message"} reduis={"15px"} width={"100%"} />
-            </form>
-          </div>
-        </div>
       </div>
     );
   }
