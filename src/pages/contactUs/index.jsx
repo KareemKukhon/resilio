@@ -78,9 +78,9 @@ export default class ContactUs extends Component {
     </p>
     <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
     {/* First div */}
-    <ContactInfo title="offers@sbf.com" Icon={MailIcon} />
+    <ContactInfo title="office@sbf.com" Icon={MailIcon} />
     <ContactInfo title="Riyadh, Saudi Arabia" Icon={HomeIcon} />
-    <ContactInfo title="+966 5X XXX XXXX" Icon={PhoneIcon} />
+    <ContactInfo title="+966 55 543 4043" Icon={PhoneIcon} />
 
 
 </div>
