@@ -64,38 +64,40 @@ export default class ContactUs extends Component {
     console.log('SUCCESS!', this.form.current); 
   };
 
-  render() {
-    return (
-      <div>
-        {/* <Header myPage="contact" /> */}
-        <Introduction/>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px', margin: '20px' }}>
-  <div style={{  padding: '20px', textAlign: 'left' }}>
-    <h1 style={{ fontSize: '60px' }}>SBF.com & SBF.com.sa — Contact / Offer</h1>
-    <p style={{ fontSize: '18px', color: '#595A73' }}>
-      Interested in acquiring <strong>SBF.com</strong> and <strong>SBF.com.sa</strong>? Send your offer or inquiry using the form below, or reach out via the contact details provided. 
-      This premium 3-letter domain pair is short, memorable, and ideal for Saudi government and digital transformation initiatives. Serious offers only. Escrow supported.
-    </p> 
-    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
-    {/* First div */}
-    <ContactInfo title="office@sbf.com" Icon={MailIcon} />
-    <ContactInfo title="Riyadh, Saudi Arabia" Icon={HomeIcon} />
-    <ContactInfo title="+966 55 543 4043" Icon={PhoneIcon} />
+render() {
+  return (
+    <div>
+      {/* <Header myPage="contact" /> */}
+      <Introduction />
 
+      <div className="contact-wrapper">
+        <div className="contact-left">
+          <h1 className="contact-heading">
+            SBF.com &amp; SBF.com.sa — Contact / Offer
+          </h1>
 
-</div>
-  </div>
-  <img
-    className='responsive-image'
-    src={`${process.env.PUBLIC_URL}/contact-us.png`}
-    alt="SBF.com & SBF.com.sa contact page"
-    style={{ width: '45%', height: '490px' }}
-  />
-</div>
+          <p className="contact-text">
+            Interested in acquiring <strong>SBF.com</strong> and <strong>SBF.com.sa</strong>? Send your offer
+            or inquiry using the form below, or reach out via the contact details provided.
+            This premium 3-letter domain pair is short, memorable, and ideal for Saudi government and
+            digital transformation initiatives. <strong>Serious offers only. Escrow supported.</strong>
+          </p>
 
+          <div className="contact-info-row">
+            <ContactInfo title="office@sbf.com" Icon={MailIcon} />
+            <ContactInfo title="Riyadh, Saudi Arabia" Icon={HomeIcon} />
+            <ContactInfo title="+966 55 543 4043" Icon={PhoneIcon} />
+          </div>
+        </div>
 
-
+        <img
+          className="contact-image responsive-image"
+          src={`${process.env.PUBLIC_URL}/contact-us.png`}
+          alt="SBF.com & SBF.com.sa contact page"
+        />
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 }

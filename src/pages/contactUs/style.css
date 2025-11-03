@@ -1,13 +1,101 @@
-.text-field .Mui-focused {
-    color: var(--color-primary) !important;
-
+/* =========================
+   Contact / Offer layout
+   ========================= */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
 }
-.text-field .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+
+.contact-left {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-heading {
+  font-size: clamp(28px, 4vw, 48px);
+  margin-bottom: 12px;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: #595a73;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.contact-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* صورة الكونتاكت */
+.contact-image {
+  flex: 0 0 45%;
+  max-width: 45%;
+  height: 490px;
+  object-fit: contain;
+}
+
+/* لو عندك .responsive-image قديمة خليه هيك احتياط */
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+/* تابلت وما دون */
+@media (max-width: 960px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+  }
+
+  .contact-left {
+    padding: 10px 0;
+  }
+
+  .contact-heading {
+    font-size: 32px;
+  }
+
+  .contact-image {
+    max-width: 100%;
     width: 100%;
-    height: 55px;
-    border: 1px solid var(--color-primary) !important;
-    /* box-sizing: border-box; */
-    color: var(--color-primary);
-    border-radius: 20px;
+    height: auto;
+    align-self: center;
+  }
+
+  .contact-info-row {
+    justify-content: flex-start;
+  }
+}
+
+/* موبايل صغير */
+@media (max-width: 600px) {
+  .contact-wrapper {
+    padding: 16px;
+  }
+
+  .contact-heading {
+    font-size: 26px;
+  }
+
+  .contact-text {
     font-size: 16px;
+  }
+
+  .contact-info-row {
+    flex-direction: column;
+  }
 }
