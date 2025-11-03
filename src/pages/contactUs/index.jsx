@@ -75,7 +75,7 @@ export default class ContactUs extends Component {
     <p style={{ fontSize: '18px', color: '#595A73' }}>
       Interested in acquiring <strong>SBF.com</strong> and <strong>SBF.com.sa</strong>? Send your offer or inquiry using the form below, or reach out via the contact details provided. 
       This premium 3-letter domain pair is short, memorable, and ideal for Saudi government and digital transformation initiatives. Serious offers only. Escrow supported.
-    </p>
+    </p> 
     <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
     {/* First div */}
     <ContactInfo title="office@sbf.com" Icon={MailIcon} />
